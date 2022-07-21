@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #sidebar{
+         margin-top: 80px; 
+          font-weight: bold;
+          font-size: 20px;
+          margin-left: 20px;
+
+        }
+        #writen{
+          text-align: center;
+          
+          
+        }
+        #writen>h1{
+          padding-right: 24%;
+          
+        }
+        #writen>p{
+            margin-top: 30px;
+            font-size: 17px
+        }
+
+        #srch{
+            margin-left: 10%;
+            margin-top: 20px;
+        }
+         #gender{
+            margin-top: 40px;
+            color: rgb(129, 136, 141);
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            /* font-size: 20px; */
+
+         }
+         #save{
+            border: 2px solid rgb(164, 157, 157);
+            width: 280px;
+            height: 40px;
+            margin-left: 10px;
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 15px;
+         }
+        #save:hover{
+            background-color: black;
+            color: aliceblue;
+        }
+        #share{
+            padding-top: 20px;
+            padding-left: 10px;
+            font-size: 20px;
+            color: rgb(80, 83, 83);
+           font-weight: bold;
+        }
+        #cato{
+            padding: 20px;
+           margin-top: -20px;
+            color: rgb(95, 92, 92);
+        }
+        #cato:hover{
+            cursor: pointer;
+        }
+        #cato>h3{
+            padding-top: 20px;
+        }
+
+      .smallbox{
+        border: 1px solid rgb(240, 234, 234);
+        width: 20%;
+        /* padding-top: 10px; */
+      }
+      #Related{
+        margin-left: 20px;
+      }
+      #Related>p{
+        font-weight: 100;
+        color: rgb(111, 109, 109);
+      }
+      #srcha{
+        margin-left: 20px;
+      }
+      #srcha>p{
+        font-weight: 100;
+        color: rgb(111, 109, 109);
+      }
+
+      .products{
+        display: grid;
+        width: 70%;
+        margin: auto;
+         
+        grid-template-columns: repeat(3,1fr);
+      }
+      .products>div{
+        width: 10%;
+
+      }
+      .products>img{
+        width: 30%;
+      }
+  
+      #Sort{
+        margin: auto;
+        display: flex;
+        margin-left: 80%;
+        margin-top: -120%;
+         border-color: rgb(255, 255, 255);
+         font-size: 20px;
+      }
+
+    </style>
+</head>
+<body>
+    <div id="writen">
+   <h1>Women's Fashion & Designer Products </h1>
+   <p>Compare price and shop Women's fashion across 500+ stores in one place Discover the latest designer fashion for women at ModeSens.</p>
+    </div>
+   <!-- side bar -->
+   <div id="sidebar">
+    <p>MODESENS / SHOP / WOMEN</p>
+    <P>10,000+  ITEMS<svg id="srch" xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg> </P>
+    <p>Filter By : <span style=" margin-left: 12%;">Reset</span></p>
+    
+     <div id="gender">
+        <p>Gender:Women <span style="margin-left: 140px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg></span></p>
+        <p>Condition:New <span style="margin-left: 142px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg></span> </p>
+        <p>Category:All <span style="margin-left: 157px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg></span></p>
+     </div>
+        <div id="save">
+            <h3>SAVE MY SEARCH</h3>
+        </div>
+        <div id="share">
+        <p >Share My Search</p>
+        <p>My Saved Searches</p>
+        </div>
+         
+        <div id="cato"> 
+
+            <div class="smallbox">
+                <h3>CATEGORY <span style="margin-left:130px ;" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></span></h3>
+            </div>
+            <div class="smallbox">
+            <h3>DESIGNER <span style="margin-left:140px ;" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></span></h3>
+              </div>
+              <div class="smallbox">
+            <h3>SIZE <span style="margin-left:210px ;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></span></h3>
+              </div>
+              <div class="smallbox">
+            <h3>COLOR <span style="margin-left:180px ;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></span></h3>
+            </div>
+            <div class="smallbox">
+            <h3>PRICE RANGE <span style="margin-left:103px ;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></span></h3>
+              </div>
+              <div class="smallbox">
+            <h3>ON SALE <span style="margin-left:160px ;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></span></h3>
+              </div>
+              <div class="smallbox">
+            <h3>STORE <span style="margin-left:188px ;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></span></h3>
+              </div>
+              <div class="smallbox">
+            <h3> KEYWORD <span style="margin-left:140px ;"><svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></span></h3>
+              </div>
+        </div>
+
+        <div id="Related">
+           <h3>Related Category</h3>
+           <p>Sale</p>
+           <p>Home</p>
+           <p>Accessories</p>
+           <p>Bags</p>
+           <p>Beauty</p>
+           <p>Clothing</p>
+           <p>Shoes</p>
+        </div>
+        <div id="srcha">
+            <h3>Related Search</h3>
+            <p>Men</p>
+            <p>Kids</p>
+            <p>Marc Le Bihan</p>
+            <p>Gucci</p>
+            <p>Yohji Yamamoto</p>
+            <p>Mabu By Maria Bk</p>
+            <p>Sophia Webster X Puma</p>
+            <p>Topo Designs</p>
+            <p> Burberry</p>
+
+
+        </div>
+
+        
+      </div>
+      
+      
+<!-- END OF SIDE BAR -->
+
+
+<!-- PAGE DESIGNING -->
+<select name="" id="Sort">
+  <option value="none">Best Sellers</option>
+  <option value="none">Best Sellers</option>
+  <option value="none">New Arrivals</option>
+  <option value="none">Most Liked</option>
+  <option value="none">Highest Price</option>
+  <option value="none">Lowest Price</option>
+  <option value="none">New Sale</option>
+  <option value="none">Largest Discount Amount</option>
+  <option value="none">Largest Discount Percentage</option>
+</select>
+
+<div class="products"></div>
+
+
+</body>
+</html>
+<script>
+var products_data = [ {
+name:"JACQUEMUS",
+brand:"La Robe Limao Cutout Halter Neck Minidress In",
+price:"$204-$775",
+catagory:"Compare 21 store",
+img:"https://cdn.modesens.com/product/41449769_2?w=400&",
+},
+    {
+name:"ISABEL MARANT",
+brand:"Thalie Burnt Orange leather clogs  ",
+price:"$119 - $460",
+catagory:"Compare 16 store",
+img:"https://cdn.modesens.com/product/36824483_1?w=400&",
+},
+  {
+name:"VERSACE ",
+brand:"Barocco Paint High_Waised",
+price:"$193-$575",
+catagory:"Compare 18 store",
+img:"https://cdn.modesens.com/availability/45835346?w=400&",
+},
+    {
+name:"BALENCIAGA",
+brand:"Piscine Logo-embosed rubber",
+price:"$162-$445",
+catagory:"Compare 18 store",
+img:"https://cdn.modesens.com/product/21233692_255?w=400&",
+},
+    {
+name:"ISABEL",
+brand:"Nadege Flore-pant Mid-rise",
+price:"$118-$590",
+catagory:"Compare 18 store",
+img:"https://cdn.modesens.com/product/40329695?w=400&",
+},
+    {
+name:"BALENCIAGE",
+brand:"Piscine Logo-embosed rubber",
+price:"$370-$773",
+catagory:"Compare 20 store",
+img:"https://cdn.modesens.com/availability/48416875?w=400&",
+},
+    {
+name:"ZIMMERMANN",
+brand:"Pattie Floral Wrap Tiered Three",
+price:"$577-$744",
+catagory:"Compare 22 store",
+img:"https://cdn.modesens.com/product/43660582_1?w=400&",
+},
+    {
+name:"BALENCIAGA",
+brand:"+Crocs madame Perforated",
+price:"$485-$856",
+catagory:"Compare 16 store",
+img:"https://cdn-images.farfetch-contents.com/17/33/47/61/17334761_36299358_1000.jpg",
+},
+    {
+name:"ATTICO",
+brand:"Audrey Open Back Sequinned Mini ",
+price:"$571-$1280",
+catagory:"Compare 23 store",
+img:"https://cdn.modesens.com/product/48430414_1?w=400&",
+},
+   {
+name:"BALENCIAGA",
+brand:"Piscine Logo-embosed rubber",
+price:"$620-$1225",
+catagory:"Compare 14 store",
+img:"https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/201342F127027_1.jpg",
+},
+    {
+name:"VERSACE",
+brand:"Baroque-pant Racerback Sports",
+price:"$153=$425",
+catagory:"Compare 14 store",
+img:"https://cdn.modesens.com/product/39099815_5?w=400&",
+}, 
+ {
+name:"TOTEME",
+brand:"La Robe Limao Cutout Halter Neck Minidress In",
+price:"$204-$775",
+catagory:"Compare 21 store",
+img:"https://cdn.modesens.com/availability/39247647?w=400&",
+},
+    {
+name:"JACQUEMUS",
+brand:"Thalie Burnt Orange leather clogs  ",
+price:"$119 - $460",
+catagory:"Compare 16 store",
+img:"https://www.modaoperandi.com/assets/images/products/879482/509779/large_jacquemus-neutral-hielo-dress.jpg?_t=1645471211",
+},
+    {
+name:"ISABEL MARANT ",
+brand:"Barocco Paint High_Waised",
+price:"$193-$575",
+catagory:"Compare 18 store",
+img:"https://cdn.modesens.com/product/19876380_49?w=400&",
+},
+    {
+name:"JACQUEMUS",
+brand:"Piscine Logo-embosed rubber",
+price:"$162-$445",
+catagory:"Compare 18 store",
+img:"https://cdn.modesens.com/product/21233692_255?w=400&",
+},
+    {
+name:"ZIMMERMANN",
+brand:"Nadege Flore-pant Mid-rise",
+price:"$118-$590",
+catagory:"Compare 18 store",
+img:"https://cdn.modesens.com/availability/51061736?w=400&",
+},
+    {
+name:"ZIMMERMANN",
+brand:"Piscine Logo-embosed rubber",
+price:"$370-$773",
+catagory:"Compare 20 store",
+img:"https://cdn.modesens.com/product/45058636_1?w=400&",
+},
+    {
+name:"ISABEL MARANT",
+brand:"Pattie Floral Wrap Tiered Three",
+price:"$577-$744",
+catagory:"Compare 22 store",
+img:"https://cdn.modesens.com/product/17945138_14?w=400&",
+},
+    {
+name:"ZIMMERMANN",
+brand:"+Crocs madame Perforated",
+price:"$485-$856",
+catagory:"Compare 16 store",
+img:"https://cdn.modesens.com/availability/48720649?w=400&",
+},
+    {
+name:"ZIMMERMANN",
+brand:"Audrey Open Back Sequinned Mini ",
+price:"$571-$1280",
+catagory:"Compare 23 store",
+img:"https://cdn.modesens.com/availability/53271026?w=400&",
+},
+   {
+name:"VERSACE",
+brand:"Piscine Logo-embosed rubber",
+price:"$620-$1225",
+catagory:"Compare 14 store",
+img:"https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/211653F103011_1.jpg",
+},
+    {
+name:"JACQUEMUS",
+brand:"Baroque-pant Racerback Sports",
+price:"$153=$425",
+catagory:"Compare 14 store",
+img:"https://cdn.modesens.com/availability/48323928?w=400&",
+},
+  {
+name:"JACQUEMUS",
+brand:"La Robe Limao Cutout Halter Neck Minidress In",
+price:"$204-$775",
+catagory:"Compare 21 store",
+img:"https://cdn.modesens.com/product/41449769_2?w=400&",
+},
+    {
+name:"ISABEL MARANT",
+brand:"Thalie Burnt Orange leather clogs  ",
+price:"$119 - $460",
+catagory:"Compare 16 store",
+img:"https://cdn.modesens.com/product/36824483_1?w=400&",
+},
+    {
+name:"VERSACE ",
+brand:"Barocco Paint High_Waised",
+price:"$193-$575",
+catagory:"Compare 18 store",
+img:"https://cdn.modesens.com/availability/45835346?w=400&",
+},
+    {
+name:"BALENCIAGA",
+brand:"Piscine Logo-embosed rubber",
+price:"$162-$445",
+catagory:"Compare 18 store",
+img:"https://cdn.modesens.com/product/21233692_255?w=400&",
+},
+    {
+name:"ISABEL",
+brand:"Nadege Flore-pant Mid-rise",
+price:"$118-$590",
+catagory:"Compare 18 store",
+img:"https://cdn.modesens.com/product/40329695?w=400&",
+},
+    {
+name:"BALENCIAGE",
+brand:"Piscine Logo-embosed rubber",
+price:"$370-$773",
+catagory:"Compare 20 store",
+img:"https://cdn.modesens.com/availability/48416875?w=400&",
+},
+    {
+name:"ZIMMERMANN",
+brand:"Pattie Floral Wrap Tiered Three",
+price:"$577-$744",
+catagory:"Compare 22 store",
+img:"https://cdn.modesens.com/product/43660582_1?w=400&",
+},
+    {
+name:"BALENCIAGA",
+brand:"+Crocs madame Perforated",
+price:"$485-$856",
+catagory:"Compare 16 store",
+img:"https://cdn-images.farfetch-contents.com/17/33/47/61/17334761_36299358_1000.jpg",
+},
+    {
+name:"ATTICO",
+brand:"Audrey Open Back Sequinned Mini ",
+price:"$571-$1280",
+catagory:"Compare 23 store",
+img:"https://cdn.modesens.com/product/48430414_1?w=400&",
+},
+   {
+name:"BALENCIAGA",
+brand:"Piscine Logo-embosed rubber",
+price:"$620-$1225",
+catagory:"Compare 14 store",
+img:"https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/201342F127027_1.jpg",
+},
+ {
+name:"VERSACE",
+brand:"Baroque-pant Racerback Sports",
+price:"$153=$425",
+catagory:"Compare 14 store",
+img:"https://cdn.modesens.com/product/39099815_5?w=400&",
+},
+]
+ 
+localStorage.setItem("masai-ecomm",JSON.stringify(products_data))
+
+ let products = document.querySelector(".products")
+
+ function  display(data){
+  products.innerHTML=null;
+
+  data.forEach(function(el){
+    var card = document.createElement("div")
+
+    var img = document.createElement("img")
+    img.src=el.img
+
+    var title =document.createElement("h2")
+    title.textContent= el.name
+
+    var desc = document.createElement("P")
+    desc.textContent=el.brand
+
+    var price = document.createElement("P")
+    price.textContent=el.price
+
+    var cato = document.createElement("P")
+    cato.textContent=el.catagory
+
+    var button = document.createElement("button")
+    button.innerText="Quick View"
+
+    card.append(img,title,desc,price,cato,button)
+    products.append(card)
+       
+  })
+ }
+
+display(products_data)
+</script>
