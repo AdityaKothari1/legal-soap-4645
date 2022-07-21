@@ -1,5 +1,8 @@
 
 
+
+
+
 let infoArr = JSON.parse(localStorage.getItem("details")) || [];
 
 
@@ -40,6 +43,24 @@ function signupSAVEDATA(event) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const loginPopup = document.querySelector(".login-popup");
 const close = document.querySelector(".close");
 
@@ -54,7 +75,7 @@ window.addEventListener("load", function () {
 })
 
 function showPopup() {
-  const timeLimit = 3 
+  const timeLimit = 2 
   let i = 0;
   const timer = setInterval(function () {
     i++;
@@ -63,7 +84,7 @@ function showPopup() {
       loginPopup.classList.add("show");
     }
     console.log(i)
-  }, 1000);
+  }, 500);
 }
 
 
