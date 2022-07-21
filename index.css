@@ -1,4 +1,7 @@
 /* navbar css start */
+body{
+    font-family: "SuisseIntl";
+}
 #navbar{
     /* border: 1px solid red; */
     width: 100%;
@@ -7,7 +10,9 @@
     display: flex;
     position: sticky;
     background-color: white;
+    /* box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
     top: 0px;
+    z-index: 10;
    
 }
 #logo{
@@ -45,7 +50,7 @@
     font-family:"SuisseIntl";
 }
 .text>a:after{
-    content: "";
+content: "";
 position: absolute;
 background-color:  rgb(182, 62, 10);
 height: 1px;
@@ -150,12 +155,12 @@ border-right: none;
 .slide{
     /* border: 1px solid black; */
     width: 90%;
-    height: 500px;
+    height: 450px;
     margin: auto;
 }
 .slide>img{
     width: 100%;
-    height: 500px;
+    height: 450px;
     margin: auto;
 }
 #right{
@@ -183,4 +188,348 @@ border-right: none;
     content: "\2190";
     border: 0px;
     font-size: 40px;
+}
+#brands{
+    /* border: 1px solid blue; */
+    width:90%;
+    /* height: 500px; */
+    margin: auto;
+    margin-top: 5px; 
+    overflow: hidden;
+}
+.partner{
+    /* border: 1px solid teal; */
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+.partner>h2{
+    font-family:"SuisseIntl";
+    font-size: 30px;
+    font-weight: 550;
+}
+.partner>h3{
+    font-size: 28px;
+    line-height: 3px;
+    font-weight: 300;
+     color: gray;
+     font-family:"SuisseIntl";
+}
+.carousel{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 300px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.brand_div{
+    /* border: 1px solid blue; */
+   width: 40%;
+    height: 250px;
+    margin: 20px;
+    overflow: hidden;
+}
+.blogo{
+    /* border: 2px solid green; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    gap: 20px;
+}
+.blogo>img{
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+.brand_slider{
+    display: flex;
+    width: 120%;
+
+}
+#arrow_right{
+    background-color: transparent;
+    border: none;
+    position:absolute ;
+    cursor: pointer;
+    right: -0px;
+    top: 115%;
+}
+#arrow_right:after{
+    content: "\2192";
+    border: 0px;
+    font-size: 40px;
+}
+#arrow_left{
+    background-color: transparent;
+    border: none;
+    position:absolute ;
+    cursor: pointer;
+    left: -0px;
+    top: 115%;
+}
+#arrow_left:after{
+    content: "\2190";
+    border: 0px;
+
+    font-size: 40px;
+}
+#flex{
+    display: flex;
+    width: 100%;
+   
+}
+#special{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-top: -30px;
+}
+#special>div{
+    border: 1px solid gray;
+    width: 42%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: auto;
+}
+#special>h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+#offers{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 600px; */
+}
+#display{
+    /* border: 1px solid teal; */
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+#packages{
+    /* border: 1px solid blue; */
+    width: 170%;
+    margin: auto;
+    display: flex;
+    gap: 3.33%;
+    position: relative;
+    /* overflow: hidden; */
+}
+#packages>div{
+    /* border: 1px solid red; */
+    width: 70%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+#packages>div>a>img{
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+}
+#next{
+    background-color: transparent;
+    border: none;
+    position:absolute ;
+    cursor: pointer;
+    right: 15px;
+    top: 190%;
+}
+#next:after{
+    content: "\2192";
+    border: 0px;
+    font-size: 40px;
+}
+#prev{
+    background-color: transparent;
+    border: none;
+    position:absolute ;
+    cursor: pointer;
+    left: 15px;
+    top: 190%;
+}
+#prev:after{
+    content: "\2190";
+    border: 0px;
+    font-size: 40px;
+}
+.sale>h2{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 35px;
+    cursor: pointer;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sale>h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 3px;
+    cursor: pointer;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ .sale>button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    padding: 13px 15px 10px;
+    line-height: 1;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: color .15s;
+    border: 1px solid gray;  
+}
+.sale>button:hover{
+    background-color: black;
+    color: white;
+
+}
+#all{
+margin: auto;
+margin-top: 30px;
+margin-bottom: 20px;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+display: block;
+padding: 13px 15px 10px;
+line-height: 1;
+font-size: 1rem;
+font-weight: 400;
+color: #212529;
+cursor: pointer;
+text-transform: uppercase;
+background-color: transparent;
+transition: color .15s;
+border: 1px solid gray;  
+} 
+#all:hover{
+    background-color: black;
+    color: white;
+}
+#Trend{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-top: -10px;
+}
+#Trend>div{
+    border: 1px solid gray;
+    width: 42%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: auto;
+}
+#Trend>h2{
+    font-weight: 550;
+    font-size: 30px;
+}
+#Trending{
+    border: 1px solid red;
+    width: 100%;
+    height: 600px;
+}
+
+#nex{
+    background-color: transparent;
+    border: none;
+    position:absolute ;
+    cursor: pointer;
+}
+#nex:after{
+    content: "\2192";
+    border: 0px;
+    font-size: 40px;
+}
+#pre{
+    background-color: transparent;
+    border: none;
+    position:absolute ;
+    cursor: pointer;
+}
+#pre:after{
+    content: "\2190";
+    border: 0px;
+    font-size: 40px;
+}
+#fixed{
+    border: 1px solid black;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-top: 5px;
+    overflow: hidden;
+}
+#newtrend{
+    border: 1px solid blue;
+    width: 200%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    position: relative;
+}
+.new{
+    border: 1px solid blue;
+    width: 23%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 480px;
+    text-align: center;
+    cursor: pointer;
+}
+.new>img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    height: 300px;
+    
+}
+.quick{
+    display: block;
+    margin: auto;
+    margin-top: -53.5%;
+    width: 90%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 13px 15px 10px;
+    line-height: 1;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+    transition: color .15s;
+    border: 1px solid gray;
+}
+.new:hover .quick{
+    border: 1px solid black;
+    color: black;
+    display: block;
+}
+.new>h3{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+}
+.new>p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 400;
+      color: gray;
+      line-height: 10px;
+      font-size: 16px;
+}
+.new>span{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+
 }
