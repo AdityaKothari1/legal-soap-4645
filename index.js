@@ -1,3 +1,30 @@
+
+// let infoArr = JSON.parse(localStorage.getItem("details")) 
+
+// let log = (() =>{
+
+
+//     if(infoArr == null){
+
+//         setTimeout(() => {
+            
+//             window.location.href = "sign.html"
+//             console.log("pp")
+
+//         }, 5000);
+       
+//     }
+    
+
+// })
+
+// log()
+
+// console.log(infoArr)
+
+
+// console.log("pp")
+
 let i = 0;
 function control(x) {
     i=i + x;
