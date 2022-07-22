@@ -97,3 +97,68 @@ left.addEventListener("click",function(){
   slider.style.transform="translate("+index*-20.5+"%)"
 })
 
+
+let mover=document.querySelector("#newtrend")
+let prev=document.querySelector("#pre")
+let next=document.querySelector("#nex")
+let inde=0
+next.addEventListener("click",function(){
+    if(inde<4){
+        inde=inde+1
+    }
+    else{
+        inde=4
+        inde=0
+    }
+  mover.style.transform="translate("+inde*-12.5+"%)"
+})
+prev.addEventListener("click",function(){
+    if(inde>0){
+        inde=inde-1
+    }
+    else{
+        inde=0
+        inde=4
+    }
+  mover.style.transform="translate("+inde*-12.5+"%)"
+})
+
+let move=document.querySelector("#showall")
+let pre=document.querySelector("#leftone")
+let nex=document.querySelector("#rightone")
+let startindex=0
+nex.addEventListener("click",function(){
+    if(startindex<4){
+        startindex=startindex+1
+    }
+    else{
+        startindex=4
+        startindex=0
+    }
+  move.style.transform="translate("+startindex*-12.5+"%)"
+})
+pre.addEventListener("click",function(){
+    if(startindex>0){
+        startindex=startindex-1
+    }
+    else{
+        startindex=0
+        startindex=4
+    }
+  move.style.transform="translate("+startindex*-12.5+"%)"
+})
+
+document.querySelector("#mail").addEventListener("click",function(){
+    let x=document.querySelector("#mail")
+    x.style.border="thick solid #00FFFF"
+})
+
+document.querySelector("#men").addEventListener("click",function(){
+    document.querySelector("#wo").style.display="none"
+    document.querySelector("#me").style.display="block"
+})
+document.querySelector("#women").addEventListener("click",function(){
+    document.querySelector("#wo").style.display="block"
+    document.querySelector("#me").style.display="none"
+})
+
