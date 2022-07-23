@@ -1,26 +1,7 @@
 
-// let infoArr = JSON.parse(localStorage.getItem("details")) 
-
-// let log = (() =>{
-
-
-//     if(infoArr == null){
-
-//         setTimeout(() => {
-            
-//             window.location.href = "sign.html"
-//             console.log("pp")
-
-//         }, 5000);
-       
-//     }
-    
-
-// })
-
-// log()
-
-// console.log(infoArr)
+document.querySelector("#all").addEventListener("click",function(){
+    window.location.href="specialoffer.html"
+})
 
 
 // console.log("pp")
