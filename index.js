@@ -2,6 +2,9 @@
 document.querySelector("#all").addEventListener("click",function(){
     window.location.href="specialoffer.html"
 })
+document.querySelector("#see_more").addEventListener("click",function(){
+    window.location.href="women.html"
+})
 
 
 // console.log("pp")
