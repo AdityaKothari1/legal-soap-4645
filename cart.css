@@ -1,0 +1,38 @@
+#pro{
+    margin-top: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+#pro p{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 20px;
+    margin-left: 50%;
+    margin-top: -350px;
+  
+}
+#pro h2{
+    position: absolute;
+    margin-left: 50%;
+     margin-top: -400px;
+}
+#pro h5{
+    /* position: absolute; */
+    margin-left: 52%;
+     margin-top: -200px;
+     font-size: 30px;
+}
+#pro button{
+    margin-left: 52%;
+    margin-top: -200px;
+    font-size: 30px;
+    background-color: rgb(0, 255, 170);
+    color: rgb(89, 91, 94);
+}
+
+#pro img{
+    height: 400px;
+    width: 50%;
+}

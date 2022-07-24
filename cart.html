@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div id="products1">
+    <div id="pro">
       
     </div>
     
@@ -20,7 +20,7 @@
     var cartLSdata=JSON.parse(localStorage.getItem
     ("masai-cart"))||[] 
       function  display(data1){
-      products1.innerHTML=null;
+      pro.innerHTML=null;
     
       data1.forEach(function(el){
         var card = document.createElement("div")
@@ -38,12 +38,13 @@
         price.textContent=el.price
         
     
-        var cato = document.createElement("P")
+        var cato = document.createElement("h4")
         cato.textContent=el.catagory
     
         var button = document.createElement("button")
         // button.setAttribute("class","btn")
-        button.innerText="Delete"
+        // button.innerText="Delete"
+        button.innerText="Buy Now"
         
         button.addEventListener("click",function(event){
 
@@ -51,7 +52,7 @@
         })
     
         card.append(img,title,desc,price,cato,button)
-        products1.append(card)
+        pro.append(card)
            
       })
      }
