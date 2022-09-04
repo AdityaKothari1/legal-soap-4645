@@ -57,61 +57,87 @@
         </div>
     </div>
 
-    <div id="pro">
-      
+    <div id="body">
+
+        <div id="cont">
+            
+        </div>
+        <div id="pay">
+            <h3>CheckOut</h3>
+            <input type="text" placeholder="Card Holder Name" id="card">
+            <input type="number" placeholder="Card Number" id="cardnumber">
+            <input type="number" placeholder="CVV" id="cvv">
+            <input type="date" placeholder=" Expiry Date" id="exp">
+            <button  id="cheakout">submit</button>
+        </div>
     </div>
-    
-</body>
+    </body>
 </html>
 <script>
-    var cartLSdata=JSON.parse(localStorage.getItem
-    ("masai-cart"))||[] 
-      function  display(data1){
-      pro.innerHTML=null;
-    
-      data1.forEach(function(el){
-        var card = document.createElement("div")
-
-        var img = document.createElement("img")
-        img.src=el.img
-    
-        var title =document.createElement("h2")
-        title.textContent= el.name
-    
-        var desc = document.createElement("P")
-        desc.textContent=el.brand
-    
-        var price = document.createElement("h5")
-        price.textContent=el.price
-        
-    
-        var cato = document.createElement("h4")
-        cato.textContent=el.catagory
-    
-        var button = document.createElement("button")
-        // button.setAttribute("class","btn")
-        // button.innerText="Delete"
-        button.innerText="Buy Now"
-        
-        button.addEventListener("click",function(event){
-
-         Delete(el.productID)
+   
+      let arr = JSON.parse(localStorage.getItem("masai-cart")) || []
+    let bag = 0
+  
+    let append = (arr) => {
+        let cont = document.querySelector("#cont")
+        cont.innerHTML = ""
+        arr.forEach((ele, index) => {
+            let main = document.createElement("div")
+            main.setAttribute("id", "main")
+            let div = document.createElement("div")
+            div.setAttribute("id", "img")
+            let img = document.createElement("img")
+            img.src = ele.img
+            div.append(img)
+            let box = document.createElement("div")
+            box.setAttribute("id", "box")
+            let h3 = document.createElement("h3")
+            h3.innerText = ele.name
+            let h4 = document.createElement("h4")
+            h4.innerText = ele.brand
+            let p = document.createElement("p")
+            p.innerText = `$${ele.price}`
+            bag = bag + Number(ele.price)
+            box.append(h3, h4, p)
+            let btn = document.createElement("button")
+            btn.innerText = "X"
+            btn.onclick = () => {
+                remove(index)
+            }
+            main.append(div, box, btn)
+            cont.append(main)
         })
-    
-        card.append(img,title,desc,price,cato,button)
-        pro.append(card)
-           
-      })
+        let paydiv = document.createElement("div")
+        paydiv.setAttribute("id", "total")
+        let total = document.createElement("h2")
+        total.innerText = "TOTAL AMOUNT : -"
+        let payamount = document.createElement("h2")
+        payamount.innerText = `₹${bag}`
+        paydiv.append(total, payamount)
+        cont.append(paydiv)
      }
-
-     display(cartLSdata) 
-     function Delete(id){
-        cartLSdata=cartLSdata.filter(function(el){
-            return el.productID != id
-        })
+     append(arr)
+     document.querySelector("#cheakout").addEventListener("click",paying)
+    function paying() {
+        let x = document.querySelector("#card").value
+        let y = document.querySelector("#cardnumber").value
+        let z = document.querySelector("#cvv").value
+        let a = document.querySelector("#exp").value
+        if (x == "" || y == "" || z == "" || a == "") {
+            alert('Fill the Details');
+        }
+        else {
+            setTimeout(function(){
+                alert(`${x},Your order is Sucessfull`)
+            },2000)
             
-        display(cartLSdata)
-        localStorage.setItem("masai-cart",JSON.stringify
-        (cartLSdata))
-     }
+        }
+    }
+
+    function remove(index) {
+        arr.splice(index, 1)
+        localStorage.setItem("masai-cart", JSON.stringify(arr))
+        window.location.reload()
+    }
+
 </script>
